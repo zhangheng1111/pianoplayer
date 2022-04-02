@@ -66,7 +66,7 @@ if len(sys.argv) < 2:  # no args are passed, pop up GUI # The commends given in 
 
             Button(self, text="3D Player", command=self.vpCMD).place(x=300, y=170) # Set the botton of "3D Player"
 
-            self.meas = Scale(self, from_=2, to=100, bg='white', length=210, orient='horizontal')
+            self.meas = Scale(self, from_=2, to=100, bg='white', length=210, orient='horizontal') # Set the slider in GUI interface
             self.meas.set(100)
             self.meas.place(x=40, y=110)
             Label(self, text='Max nr. of measures', bg="white").place(x=40, y=150)
