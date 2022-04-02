@@ -48,7 +48,7 @@ if len(sys.argv) < 2:  # no args are passed, pop up GUI # The commends given in 
 
             Label(self, text="Hand Size:", bg="white").place(x=40, y=50)
             hvalues = ('XXS', 'XS', 'S', 'M', 'L', 'XL', 'XXL')
-            self.handsize = Combobox(self, state="readonly", values=hvalues, width=4)
+            self.handsize = Combobox(self, state="readonly", values=hvalues, width=4) # The combination of Text boxes and drop-down lists. In the state of "readonly", data cannot be edited directly and users can only select from the drop-down list
             self.handsize.current(3)
             self.handsize.place(x=130, y=50)
 
