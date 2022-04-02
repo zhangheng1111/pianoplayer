@@ -60,11 +60,11 @@ if len(sys.argv) < 2:  # no args are passed, pop up GUI # The commends given in 
             Lcb.select()
             Lcb.place(x=200, y=80)
 
-            Button(self, text="GENERATE", command=self.generateCMD).place(x=300, y=70)
+            Button(self, text="GENERATE", command=self.generateCMD).place(x=300, y=70) # Set the botton of "GENERATE"
 
-            Button(self, text="Musescore", command=self.musescoreCMD).place(x=300, y=120)
+            Button(self, text="Musescore", command=self.musescoreCMD).place(x=300, y=120) # Set the botton of "Musescore"
 
-            Button(self, text="3D Player", command=self.vpCMD).place(x=300, y=170)
+            Button(self, text="3D Player", command=self.vpCMD).place(x=300, y=170) # Set the botton of "3D Player"
 
             self.meas = Scale(self, from_=2, to=100, bg='white', length=210, orient='horizontal')
             self.meas.set(100)
