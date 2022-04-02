@@ -44,7 +44,7 @@ if len(sys.argv) < 2:  # no args are passed, pop up GUI # The commends given in 
             self.style.theme_use("clam") #Set "clam" as the style of GUI
             self.pack(fill=BOTH, expand=True) # Fills the window horizontally and vertically
 
-            Button(self, text="Import Score", command=self.importCMD).place(x=300, y=20)
+            Button(self, text="Import Score", command=self.importCMD).place(x=300, y=20) # Set the botton of "Import Score"
 
             Label(self, text="Hand Size:", bg="white").place(x=40, y=50)
             hvalues = ('XXS', 'XS', 'S', 'M', 'L', 'XL', 'XXL')
