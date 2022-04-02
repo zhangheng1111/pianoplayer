@@ -71,11 +71,11 @@ if len(sys.argv) < 2:  # no args are passed, pop up GUI # The commends given in 
             self.meas.place(x=40, y=110)
             Label(self, text='Max nr. of measures', bg="white").place(x=40, y=150)
 
-        def importCMD(self):
+        def importCMD(self): # Import files from the command line in ftypes format
             ftypes = [('XML Music files', '*.xml'), ('Midi Music files', '*.mid'),
                       ('PIG Music files', '*.txt'), ('All files', '*')]
             dlg = tkFileDialog.Open(self, filetypes=ftypes)
-            self.filename = dlg.show()
+            self.filename = dlg.show() # The address of the file
             print('Input File is ', self.filename)
 
         def generateCMD(self):
