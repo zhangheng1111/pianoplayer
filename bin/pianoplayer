@@ -79,7 +79,7 @@ if len(sys.argv) < 2:  # no args are passed, pop up GUI # The commends given in 
             print('Input File is ', self.filename)
 
         def generateCMD(self): # Generate the fingering predicted by algorithm
-            sf = converter.parse(self.filename) #  Load music from various file formats, whether from disk, from the web, or from text, into music21.stream.
+            sf = converter.parse(self.filename) #  Load music from various file formats, whether from disk, from the web, or from text, into music21.stream. Simply provide a filename for "parse()", URL, or text string and, if the format is supported, a Score will be returned.
 
             if self.Rcb.get():
                 self.rh = Hand("right", self.handsize.get())
