@@ -83,7 +83,7 @@ if len(sys.argv) < 2:  # no args are passed, pop up GUI # The commends given in 
 
             if self.Rcb.get():
                 self.rh = Hand("right", self.handsize.get()) # "Hand" is defined in "hand.py"
-                self.rh.noteseq = reader(sf, beam=self.RightHandBeam)
+                self.rh.noteseq = reader(sf, beam=self.RightHandBeam) # "reader" is defined in "scorereader.py"
                 self.rh.generate(nmeasures=self.meas.get()) # "generate" is defined in "hand.py"
 
             if self.Lcb.get():
