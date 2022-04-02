@@ -109,7 +109,8 @@ if len(sys.argv) < 2:  # no args are passed, pop up GUI # The commends given in 
 
         def musescoreCMD(self):
             print('try opening musescore')
-            os.system('musescore output.xml')
+            #os.system('musescore output.xml')
+            os.system('start "" "D:\musescore\bin\MuseScore3.exe" "C:\Users\DELL\Desktop\output.xml"')
 
 
     root = Tk()
