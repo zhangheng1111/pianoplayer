@@ -78,7 +78,7 @@ if len(sys.argv) < 2:  # no args are passed, pop up GUI # The commends given in 
             self.filename = dlg.show() # The address of the file
             print('Input File is ', self.filename)
 
-        def generateCMD(self):
+        def generateCMD(self): # Generate the fingering predicted by algorithm
             sf = converter.parse(self.filename)
 
             if self.Rcb.get():
