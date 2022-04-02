@@ -13,7 +13,7 @@ import sys
 
 from pianoplayer import Hand, reader, core
 
-if len(sys.argv) < 2:  # no args are passed, pop up GUI
+if len(sys.argv) < 2:  # no args are passed, pop up GUI # The commends given in commend line are saved as the form of words in lists sys.argv
 
     if sys.version_info >= (3, 0): # represent the version of python of users' computer.
         from tkinter import Frame, Tk, BOTH, Label, Scale, Checkbutton, BooleanVar
