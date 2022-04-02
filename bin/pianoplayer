@@ -15,7 +15,7 @@ from pianoplayer import Hand, reader, core
 
 if len(sys.argv) < 2:  # no args are passed, pop up GUI
 
-    if sys.version_info >= (3, 0):
+    if sys.version_info >= (3, 0): # represent the version of python of users' computer.
         from tkinter import Frame, Tk, BOTH, Label, Scale, Checkbutton, BooleanVar
         from tkinter.ttk import Button, Style, Combobox
         from tkinter import filedialog as tkFileDialog
