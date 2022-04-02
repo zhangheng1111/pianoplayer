@@ -28,7 +28,7 @@ if len(sys.argv) < 2:  # no args are passed, pop up GUI # The commends given in 
     ######################
     class PianoGUI(Frame):
 
-        def __init__(self, parent):
+        def __init__(self, parent): # Constructor
             Frame.__init__(self, parent, bg="white")
             self.parent = parent
             self.filename = 'scores/bach_invention4.xml'
@@ -42,7 +42,7 @@ if len(sys.argv) < 2:  # no args are passed, pop up GUI # The commends given in 
             self.parent.title("PianoPlayer")
             self.style = Style()
             self.style.theme_use("clam") #Set "clam" as the style of GUI
-            self.pack(fill=BOTH, expand=True)
+            self.pack(fill=BOTH, expand=True) # Fills the window horizontally and vertically
 
             Button(self, text="Import Score", command=self.importCMD).place(x=300, y=20)
 
