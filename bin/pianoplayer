@@ -41,7 +41,7 @@ if len(sys.argv) < 2:  # no args are passed, pop up GUI # The commends given in 
         def initUI(self):
             self.parent.title("PianoPlayer")
             self.style = Style()
-            self.style.theme_use("clam")
+            self.style.theme_use("clam") #Set "clam" as the style of GUI
             self.pack(fill=BOTH, expand=True)
 
             Button(self, text="Import Score", command=self.importCMD).place(x=300, y=20)
