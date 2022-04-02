@@ -82,9 +82,9 @@ if len(sys.argv) < 2:  # no args are passed, pop up GUI # The commends given in 
             sf = converter.parse(self.filename) #  Load music from various file formats, whether from disk, from the web, or from text, into music21.stream. Simply provide a filename for "parse()", URL, or text string and, if the format is supported, a Score will be returned.
 
             if self.Rcb.get():
-                self.rh = Hand("right", self.handsize.get())
+                self.rh = Hand("right", self.handsize.get()) # "Hand" is defined in "hand.py"
                 self.rh.noteseq = reader(sf, beam=self.RightHandBeam)
-                self.rh.generate(nmeasures=self.meas.get())
+                self.rh.generate(nmeasures=self.meas.get()) # "generate" is defined in "hand.py"
 
             if self.Lcb.get():
                 self.lh = Hand("left", self.handsize.get())
