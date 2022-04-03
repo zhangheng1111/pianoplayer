@@ -15,7 +15,7 @@ class Hand:
 
         self.LR = side
         # fingers pos at rest first is dummy, (cm), asymmetry helps with scales
-        self.frest = [None, -7.0, -2.8, 0.0, 2.8, 5.6]
+        self.frest = [None, -7.0, -2.8, 0.0, 2.8, 5.6]  # "-7.0" is the position of thumb of right hand and "5.6" is the position of pinkie of right hand
         self.weights = [None, 1.1, 1.0, 1.1, 0.9, 0.8]  # finger relative strength
         self.bfactor = [None, 0.3, 1.0, 1.1, 0.8, 0.7]  # hit of black key bias
         self.noteseq = noteseq
