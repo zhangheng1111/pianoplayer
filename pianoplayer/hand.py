@@ -26,7 +26,7 @@ class Hand:
         self.lyrics = False  # show fingering numbers as lyrics in musescore
         self.size = size
 
-        self.hf = utils.handSizeFactor(size)
+        self.hf = utils.handSizeFactor(size) # "handSizeFactor" return a number which is represented the size of hand
         for i in (1, 2, 3, 4, 5):
             if self.frest[i]: self.frest[i] *= self.hf
         print('Your hand span set to size-' + size, 'which is', 21 * self.hf, 'cm')
