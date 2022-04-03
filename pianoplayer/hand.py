@@ -28,7 +28,7 @@ class Hand:
 
         self.hf = utils.handSizeFactor(size) # "handSizeFactor" return a number which is represented the size of hand
         for i in (1, 2, 3, 4, 5):
-            if self.frest[i]: self.frest[i] *= self.hf
+            if self.frest[i]: self.frest[i] *= self.hf # The real position of each finger of the right hand
         print('Your hand span set to size-' + size, 'which is', 21 * self.hf, 'cm')
         print('(max relaxed distance between thumb and pinkie)')
         self.cfps = list(self.frest)  # hold current finger positions
