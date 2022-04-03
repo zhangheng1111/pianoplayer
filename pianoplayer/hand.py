@@ -106,7 +106,7 @@ class Hand:
     #         if axba > 16 and (fa == 1 and fb == 4 or fa == 4 and fb == 1): return True
     #
     #     return False
-    def _skip(self, fa, fb, na, nb, hf, LR, level):
+    def _skip(self, fa, fb, na, nb, hf, LR, level): # The return value of the "_skip" function is a bool value
         # fa is fingering for note na, level is passed only for debugging
         skipped = False
         xba = nb.x - na.x  # physical distance btw the second to first note, in cm
