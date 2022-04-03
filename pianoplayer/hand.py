@@ -11,7 +11,7 @@ import pianoplayer.utils as utils
 
 #####################################################
 class Hand:
-    def __init__(self, noteseq, side="right", size='M'):
+    def __init__(self, noteseq, side="right", size='M'): # Set the side of hand to be "right" by default
 
         self.LR = side
         # fingers pos at rest first is dummy, (cm), asymmetry helps with scales
